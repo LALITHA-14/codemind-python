@@ -1,0 +1,12 @@
+#User function Template for python3
+
+class Solution:
+    def noOfNumbers(self, N):
+        # code here
+        return(
+            N
+            -(N//2+N//3+N//5+N//7)
+            +(N//6+N//10+N//14+N//15+N//21+N//35)
+            -(N//30+N//42+N//70+N//105)
+            +(N//210)
+        )
